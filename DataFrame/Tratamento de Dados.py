@@ -23,7 +23,7 @@ print("\n value_counts = conta quantas linhas/ vendas foram feitas de acordo com
 print(qtdVendas)
 print("\n")
 
-vendaVendedor = dadosDataFrame.groupby("Vendedor").sum()
+vendaVendedor = dadosDataFrame.groupby("Vendedor")[["Total Vendas"]].sum()
 print("\n groupby = agrupa as informações /.sum soma as informações agrupadas\n")
 print(vendaVendedor)
 print("\n")
